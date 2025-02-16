@@ -1,0 +1,6 @@
+timestamp,event_type,user_id,action,details
+2024-03-20 10:15:00,login,user123,successful_login,{"ip": "192.168.1.1", "device": "desktop"}
+2024-03-20 10:16:32,search,user123,product_search,{"query": "blue shoes", "filters": "size=10"}
+2024-03-20 10:17:45,cart,user123,add_to_cart,{"product_id": "P123", "quantity": 1}
+2024-03-20 10:25:12,purchase,user123,complete_purchase,{"order_id": "O789", "total": 99.99}
+2024-03-20 11:30:00,login,user456,failed_login,{"ip": "192.168.1.2", "reason": "invalid_password"} 

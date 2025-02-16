@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Mining Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h1 class="logo">Process Mining</h1>
+            <ul class="nav-links">
+                <li class="active"><a href="#data">Data</a></li>
+                <li><a href="#visualization">Visualization</a></li>
+                <li><a href="#analysis">Analysis</a></li>
+                <li><a href="#simulation">Simulation</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h2>Data Input</h2>
+            
+            <!-- File Upload Section -->
+            <section class="card">
+                <h3>File Upload</h3>
+                <div class="upload-container">
+                    <input type="file" id="fileUpload" class="file-input">
+                    <label for="fileUpload" class="file-label">Choose File</label>
+                    <button class="upload-btn">Upload File</button>
+                </div>
+            </section>
+
+            <!-- Real Time Data Section -->
+            <section class="card">
+                <h3>Real Time Data</h3>
+                <div class="api-container">
+                    <select class="data-source-select">
+                        <option value="salesforce">Salesforce</option>
+                        <option value="sap">SAP</option>
+                        <option value="oracle">Oracle</option>
+                    </select>
+                    <input type="text" placeholder="Enter API Key" class="api-input">
+                    <button class="connect-btn">Connect</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="fetch.js"></script>
+</body>
+</html> 
